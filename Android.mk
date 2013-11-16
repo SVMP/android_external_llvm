@@ -11,7 +11,11 @@ subdirs := \
   lib/AsmParser \
   lib/Bitcode/Reader \
   lib/Bitcode/Writer \
+  lib/ExecutionEngine \
+  lib/ExecutionEngine/Interpreter \
   lib/ExecutionEngine/JIT \
+  lib/ExecutionEngine/MCJIT \
+  lib/ExecutionEngine/RuntimeDyld \
   lib/CodeGen \
   lib/CodeGen/AsmPrinter \
   lib/CodeGen/SelectionDAG \
@@ -19,6 +23,7 @@ subdirs := \
   lib/IRReader \
   lib/Linker \
   lib/MC \
+  lib/MC/MCDisassembler \
   lib/MC/MCParser \
   lib/Object \
   lib/Option \

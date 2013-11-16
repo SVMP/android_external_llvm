@@ -43,9 +43,11 @@ TargetMachine *EngineBuilder::selectTarget(const Triple &TargetTriple,
                               StringRef MCPU,
                               const SmallVectorImpl<std::string>& MAttrs) {
   Triple TheTriple(TargetTriple);
-  if (TheTriple.getTriple().empty())
-    TheTriple.setTriple(sys::getProcessTriple());
+  if (TheTriple.getTriple().empty()) {
 
+    TheTriple.setTriple(sys::getDefaultTargetTriple());
+
+  }
   // Adjust the triple to match what the user requested.
   const Target *TheTarget = 0;
   if (!MArch.empty()) {

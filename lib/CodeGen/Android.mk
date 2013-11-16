@@ -38,6 +38,7 @@ codegen_SRC_FILES := \
   LiveRegMatrix.cpp \
   LiveStackAnalysis.cpp \
   LiveVariables.cpp \
+  JITCodeEmitter.cpp \
   LLVMTargetMachine.cpp \
   LocalStackSlotAllocation.cpp \
   MachineBasicBlock.cpp \
