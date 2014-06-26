@@ -2,7 +2,7 @@ LOCAL_PATH:= $(call my-dir)
 
 mcjit_SRC_FILES := \
   MCJIT.cpp \
-  MCJITMemoryManager.cpp
+  SectionMemoryManager.cpp
 
 # For the device
 # =====================================================

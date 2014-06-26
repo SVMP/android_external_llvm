@@ -1,11 +1,7 @@
 LOCAL_PATH:= $(call my-dir)
 
 mc_mcdisassembler_SRC_FILES := \
-  Disassembler.cpp \
-  EDDisassembler.cpp \
-  EDInst.cpp \
-  EDOperand.cpp \
-  EDToken.cpp
+  Disassembler.cpp
 
 # For the device
 # =====================================================

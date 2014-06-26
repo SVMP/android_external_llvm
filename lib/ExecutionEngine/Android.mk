@@ -3,6 +3,7 @@ LOCAL_PATH:= $(call my-dir)
 executionengine_SRC_FILES := \
   ExecutionEngine.cpp \
   ExecutionEngineBindings.cpp \
+  RTDyldMemoryManager.cpp \
   TargetSelect.cpp
 
 # For the device
